@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#563d7c">
+
+  <title>Emojipedia Signup</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sign-in/">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Roboto:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="src/css/signup.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+  <form class="form-signin" >
+    <div class="emoji" role="img">😄</div>
+    <h1 class="signupHeader h3 mb-3 font-weight-normal">Signup to Emojipedia!</h1>
+
+    <input type="text" name="username" value="" class="form-control top form" placeholder="Username" autocomplete="off" required autofocus>
+    <input type="email" name="email" value="" class="form-control middle" placeholder="Email" autocomplete="off" required>
+    <input type="password" name="password" class="form-control bottom" placeholder="Password" autocomplete="off" required>
+
+    <div class="emojiPrefered">
+      <label class="emojiLabel" for="">How's your day ?</label>
+      <select name="choosenEmoji" class="emojiOption" id="emoji-select">
+        <option value="">Please choose an emoji 😉</option>
+        <option value="smiling eyes" class="emoji-1"><span class="emoji-1-detail">😊 Smiling Face with Smiling Eyes</span></option>
+        <option value="heart eyes" class="emoji-2"><span class="emoji-2-detail">😍 Smiling Face with Heart-Eyes</span></option>
+        <option value="grinning with sweat" class="emoji-3"><span class="emoji-3-detail">😅 Grinning Face with Sweat</span></option>
+        <option value="medical mask" class="emoji-4"><span class="emoji-4-detail">😷 Face with Medical Mask</span></option>
+        <option value="crying face" class="emoji-5"><span class="emoji-5-detail">😭 Loudly Crying Face</span></option>
+        <option value="neutral face" class="emoji-6"><span class="emoji-6-detail">😐 Neutral Face</span></option>
+        <option value="sleepy face" class="emoji-7"><span class="emoji-7-detail">😪 Sleepy Face</span></option>
+        <option value="dizzy face" class="emoji-8"><span class="emoji-8-detail">😵 Dizzy Face</span></option>
+      </select>
+    </div>
+
+    <div class="formContainer">
+      <p class="gender">Gender :</p>
+      <div class="inputGroup">
+        <div class="inputGroup1">
+          <input class="maleOption" id="male" type="radio" name="gender" value="male" required>
+          <label class="maleLabel" for="male">
+            <span class="radioCustom"></span>
+            <span>Male</span>
+          </label>
+        </div>
+        <div class="inputGroup2">
+          <input class="femaleOption" id="female" type="radio" name="gender" value="female" required>
+          <label class="femaleLabel" for="female">
+            <span class="radioCustom"></span>
+            <span>Female</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <a class="signupBtn btn btn-lg btn-primary btn-block handlerBtn" href="./index.html">Sign up</a>
+    <p class="login">or have an account? Login <a class="loginLink" href="./login.html">here</a></p>
+    <p class="mt-5 mb-3 text-muted">&copy; <span class="copyright"></span> Emojipedia</p>
+  </form>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto';
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #2ec2b0;
+}
+
+.emoji {
+  font-size: 450%;
+  animation: emojiJump .6s cubic-bezier(0.34, 1.56, 0.64, 1) 1 alternate forwards;
+}
+
+.signupHeader {
+  font-family: 'Montserrat';
+  padding: 4px 0;
+  color: #fff;
+  text-shadow: 2px 2px 1px #1cb3a1;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.top::-webkit-input-placeholder,
+.middle::-webkit-input-placeholder,
+.bottom::-webkit-input-placeholder {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: .8;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.middle {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+.bottom {
+  margin-bottom: 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.text-muted {
+  margin-top: 20px;
+  color: rgba(255,255,255, .8);
+}
+
+.signupBtn {
+  color: #fff;
+  border: none;
+}
+
+.login {
+  margin-top: 10px;
+}
+.login .loginLink,
+.login .loginLink:visited {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.formContainer .gender {
+  justify-self: stretch;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1cb3a1;
+  background-color: #fff;
+  padding: 2px 3px;
+  border-radius: 4px;
+}
+
+.inputGroup {
+  justify-self: stretch;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-gap: 25px;
+  margin: 5px 0;
+}
+
+.maleOption,
+.femaleOption {
+  display: none;
+}
+
+.maleOption:checked ~ .maleLabel .radioCustom::after  {
+  opacity: 1;
+  visibility: visible;
+}
+
+.femaleOption:checked ~ .femaleLabel .radioCustom::after  {
+  opacity: 1;
+  visibility: visible;
+}
+
+.maleLabel,
+.femaleLabel {
+  display: flex;
+  color: #222831;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.radioCustom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  margin-right: 5px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.radioCustom::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s ease;
+}
+
+.emojiLabel {
+  justify-self: stretch;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1cb3a1;
+  background-color: #fff;
+  padding: 2px 3px;
+  border-radius: 4px;
+}
+
+.emojiPrefered {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  margin: 10px 0;
+}
+
+.emojiPrefered .emojiOption {
+  border: none;
+  background-color: #222831;
+  color: #fff;
+  padding: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+@keyframes emojiJump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
