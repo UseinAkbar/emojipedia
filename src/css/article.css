@@ -98,6 +98,7 @@ body {
 .nav__item--user {
   position: relative;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav__item--user:hover .option{
@@ -275,4 +276,10 @@ body {
 
 .page__nav:hover {
   border-bottom: 1.5px solid #222831;
+}
+
+@media only screen and (max-width: 31.25rem) {
+  .container {
+    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+  }
 }
