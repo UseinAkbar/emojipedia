@@ -4,6 +4,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 31.25rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -280,6 +286,10 @@ body {
 
 @media only screen and (max-width: 31.25rem) {
   .container {
-    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+    grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+  }
+
+  .content__text {
+    font-weight: 300;
   }
 }
