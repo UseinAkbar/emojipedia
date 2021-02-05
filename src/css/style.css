@@ -162,7 +162,6 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/emoji-bg2.jpg');
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
   display: grid;
   grid-template-columns: minmax(min-content, max-content);
   grid-auto-rows: min-content;
@@ -170,6 +169,12 @@ body {
   justify-content: center;
   align-content: center;
   justify-items: center;
+}
+
+@media only screen and (min-width: 31.25rem) {
+  .header {
+    background-attachment: fixed;
+  }
 }
 
 .header__title,
