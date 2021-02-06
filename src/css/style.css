@@ -171,12 +171,6 @@ body {
   justify-items: center;
 }
 
-@media only screen and (min-width: 31.25rem) {
-  .header {
-    background-attachment: fixed;
-  }
-}
-
 .header__title,
 .header__cta {
   position: relative;
@@ -215,6 +209,12 @@ body {
 
 .header__cta:active {
   transform: scale(.90);
+}
+
+@media only screen and (min-width: 31.25rem) {
+  .header {
+    background-attachment: fixed;
+  }
 }
 
 .category {
@@ -375,6 +375,8 @@ body {
 
   .header__cta {
     animation: popupBtn .8s ease 1 alternate forwards;
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
     -webkit-tap-highlight-color: transparent;
   }
 
